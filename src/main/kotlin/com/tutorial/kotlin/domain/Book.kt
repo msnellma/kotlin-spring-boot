@@ -17,5 +17,5 @@ data class Book (
     val image: String,
     @ManyToOne(cascade = [CascadeType.DETACH])
     @JoinColumn(name="author_id")
-    val author: String
+    val author: Author
 )
