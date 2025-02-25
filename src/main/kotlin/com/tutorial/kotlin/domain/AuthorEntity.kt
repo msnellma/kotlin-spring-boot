@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType
 
 @Entity
 @Table(name="authors")
-data class Author (
+data class AuthorEntity (
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="author_id_seq")
     var id: Long?,

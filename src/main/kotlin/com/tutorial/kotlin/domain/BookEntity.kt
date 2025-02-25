@@ -9,7 +9,7 @@ import jakarta.persistence.CascadeType
 
 @Entity
 @Table(name="books")
-data class Book (
+data class BookEntity (
     @Id
     var isbn: String,
     val title: String,
@@ -17,5 +17,5 @@ data class Book (
     val image: String,
     @ManyToOne(cascade = [CascadeType.DETACH])
     @JoinColumn(name="author_id")
-    val author: Author
+    val author: AuthorEntity
 )
