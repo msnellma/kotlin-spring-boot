@@ -1,6 +1,6 @@
 package com.tutorial.kotlin
 
-import com.tutorial.kotlin.domain.AuthorEntity
+import com.tutorial.kotlin.domain.entities.AuthorEntity
 import com.tutorial.kotlin.domain.dto.AuthorDto
 
 fun AuthorEntity.toAuthorDto() = AuthorDto(

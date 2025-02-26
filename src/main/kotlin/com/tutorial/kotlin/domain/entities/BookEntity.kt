@@ -1,4 +1,4 @@
-package com.tutorial.kotlin.domain
+package com.tutorial.kotlin.domain.entities
 
 import jakarta.persistence.Entity
 import jakarta.persistence.Table
